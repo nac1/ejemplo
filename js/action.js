@@ -35,11 +35,10 @@ var fn = {
     
     alertdimissed:function(){
     alert("realizada");
-    }
-    
-    
+    }, 
     
     alert2:function(){
+          alert("=)");
     navigator.notification.confirm(
     'You are the winner!', // message
      onConfirm,            // callback to invoke with index of button pressed
