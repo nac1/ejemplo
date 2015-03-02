@@ -9,6 +9,7 @@ var fn = {
         alert("2");
         $('#contact').tap(fn.activa);
         $('#bot').tap(fn.boton);
+        $('#al2').tap(fn.alert2);
         
     },
     activa:function(){
@@ -35,6 +36,24 @@ var fn = {
     alertdimissed:function(){
     alert("realizada");
     }
+    
+    
+    
+    alert2:function(){
+    navigator.notification.confirm(
+    'You are the winner!', // message
+     onConfirm,            // callback to invoke with index of button pressed
+    'Game Over',           // title
+    ['Restart','Exit']     // buttonLabels
+);
+    
+     },
+    
+    onConfirm:function(buttonIndex){
+     alert('You selected button ' + buttonIndex);
+        
+    }
+
 
 };
 
