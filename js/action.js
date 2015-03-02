@@ -41,7 +41,7 @@ var fn = {
           alert("=)");
     navigator.notification.confirm(
     'You are the winner!', // message
-     onConfirm,            // callback to invoke with index of button pressed
+     fn.onConfirm,            // callback to invoke with index of button pressed
     'Game Over',           // title
     ['Restart','Exit']     // buttonLabels
 );
